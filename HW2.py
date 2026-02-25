@@ -69,8 +69,16 @@ class Stack:
 
     def __init__(self):
         # TODO: initialize the stack
-        pass
-
+        self.elements = []
+        self.top = -1 #accessing top index of my stack
+    
+    def push(self, value): #pushing each element into my stack
+        self.elements.append(value) #appending to stack
+        self.top +=1 #move index to right so i can always get the last added value
+    
+    
+         
+        
     # Problem 3: Write code to evaluate a postfix expression using stack and return the integer value
     # Use stack which you implemented above for this problem
 
