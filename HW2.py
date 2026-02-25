@@ -76,9 +76,14 @@ class Stack:
         self.elements.append(value) #appending to stack
         self.top +=1 #move index to right so i can always get the last added value
     
-    
+    def pop(self):
+        if self.top == -1:
+            return None #there is nothing in the stack to even pop
+        value = self.elements[self.top] #accessing top value currently
+        self.elements.pop() #popping that top value
+        self.top -= 1  #change top to index on left
          
-        
+    
     # Problem 3: Write code to evaluate a postfix expression using stack and return the integer value
     # Use stack which you implemented above for this problem
 
@@ -94,6 +99,7 @@ class Stack:
 
     def evaluatePostfix(exp: str) -> int:
         # TODO: implement this using your Stack class
+        
         pass
 
 
