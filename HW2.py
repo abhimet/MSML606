@@ -25,9 +25,13 @@ class HomeWork2:
 
     def constructBinaryTree(self, input) -> TreeNode:
         node_list = [] #making a list to store all the nodes from input
-        
-
-
+        for element in input: # iterating through my input 
+            if element not in ['+', '-', '*', '/']:
+                node_list.append(TreeNode(element))
+            else:
+                right_child = node_list.pop() #popping last node in list to be right child 
+                left_child = node_list.pop() #popping whatever node is there at end to be left child
+                
     # Problem 2.1: Use pre-order traversal (root, left, right) to generate prefix notation
     # return an array of elements of a prefix expression
     # expected output for the tree from problem 1 is [*,+,3,4,2]
