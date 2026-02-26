@@ -30,7 +30,9 @@ class HomeWork2:
                 node_list.append(TreeNode(element))
             else:
                 right_child = node_list.pop() #popping last node in list to be right child 
-                left_child = node_list.pop() #popping whatever node is there at end to be left child
+                left_child = node_list.pop() #popping wthe one before that last one to be left child
+                
+                #need to make a node in the tree for the actual operator
                 
     # Problem 2.1: Use pre-order traversal (root, left, right) to generate prefix notation
     # return an array of elements of a prefix expression
