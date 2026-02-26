@@ -120,6 +120,8 @@ class Stack:
                     if last_no == 0:
                         raise ZeroDivisionError("error cant divide by zero") #zerodivisionerror
                     calculation = int((second_last_no)/(last_no)) #division
+                    stack.push(calculation)
+        return stack.pop() #returning whatever is left after all calculations
 # Main Function. Do not edit the code below
 if __name__ == "__main__":
     homework2 = HomeWork2()
