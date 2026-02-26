@@ -107,7 +107,19 @@ class Stack:
             else:
                 last_no = stack.pop() #last #, on right
                 second_last_no = stack.pop() #second to last #, on left
-                
+                if element == '+':
+                    calculation = second_last_no + last_no #addition
+                    stack.push(calculation)
+                elif element == '-':
+                    calculation = second_last_no - last_no #subtraction
+                    stack.push(calculation)
+                elif element == '*':
+                    calculation = second_last_no * last_no #multiplication
+                    stack.push(calculation)
+                elif element == "/":
+                    calculation = (second_last_no) / (last_no) #divison
+                    stack.push(calculation)
+                    
 # Main Function. Do not edit the code below
 if __name__ == "__main__":
     homework2 = HomeWork2()
