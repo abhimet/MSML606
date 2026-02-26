@@ -42,7 +42,7 @@ class HomeWork2:
                 node_list.append(operator_node) #push to list
         #get root of the tree
             return node_list
-                
+    constructBinaryTree([“3”, “4”, “+”, “2”, “*”]))         
                 
     # Problem 2.1: Use pre-order traversal (root, left, right) to generate prefix notation
     # return an array of elements of a prefix expression
