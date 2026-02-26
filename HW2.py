@@ -41,7 +41,7 @@ class HomeWork2:
                 
                 node_list.append(operator_node) #push to list
         #get root of the tree
-            return print(node_list)
+        return node_list[0]
         
       
                 
