@@ -24,8 +24,8 @@ class HomeWork2:
     #     3   4
 
     def constructBinaryTree(self, input) -> TreeNode:
-        pass
-
+        node_list = [] #making a list to store all the nodes from input
+        
 
 
     # Problem 2.1: Use pre-order traversal (root, left, right) to generate prefix notation
@@ -130,39 +130,39 @@ print(s.evaluatePostfix("5 1 2 + 4 * + 3 -"))
 if __name__ == "__main__":
     homework2 = HomeWork2()
 
-    # print("\nRUNNING TEST CASES FOR PROBLEM 1")
-    # testcases = []
-    # try:
-    #     with open('p1_construct_tree.csv', 'r') as f:
-    #         testcases = list(csv.reader(f))
-    # except FileNotFoundError:
-    #     print("p1_construct_tree.csv not found")
+    print("\nRUNNING TEST CASES FOR PROBLEM 1")
+    testcases = []
+    try:
+        with open('p1_construct_tree.csv', 'r') as f:
+            testcases = list(csv.reader(f))
+    except FileNotFoundError:
+        print("p1_construct_tree.csv not found")
 
-    # for i, (postfix_input,) in enumerate(testcases, 1):
-    #     postfix = postfix_input.split(",")
+    for i, (postfix_input,) in enumerate(testcases, 1):
+        postfix = postfix_input.split(",")
 
-    #     root = homework2.constructBinaryTree(postfix)
-    #     output = homework2.postfixNotationPrint(root)
+        root = homework2.constructBinaryTree(postfix)
+        output = homework2.postfixNotationPrint(root)
 
-    #     assert output == postfix, f"P1 Test {i} failed: tree structure incorrect"
-    #     print(f"P1 Test {i} passed")
+        assert output == postfix, f"P1 Test {i} failed: tree structure incorrect"
+        print(f"P1 Test {i} passed")
 
-    # print("\nRUNNING TEST CASES FOR PROBLEM 2")
-    # testcases = []
-    # with open('p2_traversals.csv', 'r') as f:
-    #     testcases = list(csv.reader(f))
+    print("\nRUNNING TEST CASES FOR PROBLEM 2")
+    testcases = []
+    with open('p2_traversals.csv', 'r') as f:
+        testcases = list(csv.reader(f))
 
-    # for i, row in enumerate(testcases, 1):
-    #     postfix_input, exp_pre, exp_in, exp_post = row
-    #     postfix = postfix_input.split(",")
+    for i, row in enumerate(testcases, 1):
+        postfix_input, exp_pre, exp_in, exp_post = row
+        postfix = postfix_input.split(",")
 
-    #     root = homework2.constructBinaryTree(postfix)
+        root = homework2.constructBinaryTree(postfix)
 
-    #     assert homework2.prefixNotationPrint(root) == exp_pre.split(","), f"P2-{i} prefix failed"
-    #     assert homework2.infixNotationPrint(root) == exp_in.split(","), f"P2-{i} infix failed"
-    #     assert homework2.postfixNotationPrint(root) == exp_post.split(","), f"P2-{i} postfix failed"
+        assert homework2.prefixNotationPrint(root) == exp_pre.split(","), f"P2-{i} prefix failed"
+        assert homework2.infixNotationPrint(root) == exp_in.split(","), f"P2-{i} infix failed"
+        assert homework2.postfixNotationPrint(root) == exp_post.split(","), f"P2-{i} postfix failed"
 
-    #     print(f"P2 Test {i} passed")
+        print(f"P2 Test {i} passed")
 
     print("\nRUNNING TEST CASES FOR PROBLEM 3")
     testcases = []
