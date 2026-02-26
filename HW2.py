@@ -41,7 +41,7 @@ class HomeWork2:
                 
                 node_list.append(operator_node) #push to list
         #get root of the tree
-            
+            return node_list
                 
                 
     # Problem 2.1: Use pre-order traversal (root, left, right) to generate prefix notation
