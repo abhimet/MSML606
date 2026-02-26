@@ -82,7 +82,7 @@ class Stack:
         value = self.elements[self.top] #accessing top value currently
         self.elements.pop() #popping that top value
         self.top -= 1  #change top to index on left
-         
+        return value #return value  
     
     # Problem 3: Write code to evaluate a postfix expression using stack and return the integer value
     # Use stack which you implemented above for this problem
@@ -99,10 +99,15 @@ class Stack:
 
     def evaluatePostfix(exp: str) -> int:
         # TODO: implement this using your Stack class
-        
-        pass
-
-
+        sep_exp = exp.split() #splitting the expresison so each value has its own string
+        stack = Stack()
+        for element in sep_exp: 
+            if element not in ['+', '-', '*', '/']: #checking if any element is a number
+                stack.push(int(element))
+            else:
+                last_no = stack.pop() #last #, on right
+                second_last_no = stack.pop() #second to last #, on left
+                
 # Main Function. Do not edit the code below
 if __name__ == "__main__":
     homework2 = HomeWork2()
