@@ -97,7 +97,7 @@ class Stack:
 
     # DO NOT USE EVAL function for evaluating the expression
 
-    def evaluatePostfix(exp: str) -> int:
+    def evaluatePostfix(s, exp: str) -> int: #testing second argument here because getting error, adding second arg s for instance
         # TODO: implement this using your Stack class
         sep_exp = exp.split() #splitting the expresison so each value has its own string
         stack = Stack() 
@@ -123,7 +123,7 @@ class Stack:
                     stack.push(calculation)
         return stack.pop() #returning whatever is left after all calculations
 s = Stack()
-print(s.evaluatePostfix("5 1 2 + 4 * + 3 -"))
+print(s.evaluatePostfix("5 1 2 + 4 * + 3 -")) 
 
 
 # Main Function. Do not edit the code below
