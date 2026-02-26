@@ -41,8 +41,9 @@ class HomeWork2:
                 
                 node_list.append(operator_node) #push to list
         #get root of the tree
-            return node_list
-    constructBinaryTree([“3”, “4”, “+”, “2”, “*”]))         
+            return print(node_list)
+        
+      
                 
     # Problem 2.1: Use pre-order traversal (root, left, right) to generate prefix notation
     # return an array of elements of a prefix expression
@@ -73,6 +74,8 @@ class HomeWork2:
     def postfixNotationPrint(self, head: TreeNode) -> list:
         pass
 
+hw2 = HomeWork2()
+print(hw2.constructBinaryTree(["3", "4", "+", "2", "*"]))      
 
 class Stack:
     # Implement your stack using either an array or a list
