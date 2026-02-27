@@ -208,6 +208,7 @@ class Stack:
         return stack.pop() #returning whatever is left after all calculations
 s = Stack()
 print(s.evaluatePostfix("5 1 2 + 4 * + 3 -"))
+
 #edge cases
 
 #malformed
@@ -220,6 +221,7 @@ except ValueError as e: print(e)
 
 #negative numbers - not sure
 #large numbers - not sure
+print(s.evaluatePostfix("9999999 3 +"))
 #invalid tokens - not sure
 #division by zero already handled in problem 3
 
