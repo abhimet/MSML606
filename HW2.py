@@ -76,7 +76,9 @@ class HomeWork2:
         if head is None:
             return [] 
   
-         
+        #checking if number at given node
+        if head.left is None and head.right is None:
+            return [head.val] #give number directly
         
         #getting all left vals
         left = self.infixNotationPrint(head.left)
