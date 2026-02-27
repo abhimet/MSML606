@@ -51,7 +51,7 @@ class HomeWork2:
     # you can see the examples in p2_traversals.csv
 
     def prefixNotationPrint(self, head: TreeNode) -> list:
-        #checking if no node, then giving out nothing:
+        #checking if no node, then giving out nothing
         if head is None:
             return []
         final_result = [head.val] #setting up the list with value at root
@@ -72,7 +72,15 @@ class HomeWork2:
     # treat parentheses as individual elements in the returned list (see output)
 
     def infixNotationPrint(self, head: TreeNode) -> list:
-        pass
+        #no node, giving out nothing, empty list
+        if head is None:
+            return [] 
+        final_result = []
+        
+        #getting all left vals
+        left = self.infixNotationPrint(head.left)
+        for vals in left:
+            final_result.append(vals) 
 
 
     # Problem 2.3: Use post-order traversal (left, right, root) to generate postfix notation.
@@ -104,6 +112,9 @@ print(hw2.prefixNotationPrint(case_2))
 
 #testing postfix
 print(hw2.postfixNotationPrint(case_1))
+
+#testing infix
+
 
 class Stack:
     # Implement your stack using either an array or a list
