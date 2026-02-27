@@ -55,9 +55,12 @@ class HomeWork2:
         if head is None:
             return []
         final_result = [head.val] #setting up the list with value at current node
-        
-        
-        lef
+        left = self.prefixNotationPrint(head.left)#going from root to left child immediately
+        for vals in left:
+            final_result.append(vals) #adding left side to list
+        right = self.prefixNotationPrint(head.right)
+        for vals in right:
+            final_result.append(vals) #adding right 
 
     # Problem 2.2: Use in-order traversal (left, root, right) for infix notation with appropriate parentheses.
     # return an array of elements of an infix expression
