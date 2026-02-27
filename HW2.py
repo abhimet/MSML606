@@ -75,7 +75,8 @@ class HomeWork2:
         #no node, giving out nothing, empty list
         if head is None:
             return [] 
-        final_result = ['()'] #adding parentheses as trying to match expected output 
+        final_result = ['('] #adding parentheses as trying to match expected output
+         
         
         #getting all left vals
         left = self.infixNotationPrint(head.left)
@@ -88,9 +89,10 @@ class HomeWork2:
         right = self.infixNotationPrint(head.right)
         for vals in right:
             final_result.append(vals)
-        
+        final_result.append(')') #adding closed parentheses
         return final_result #combined with everything
     
+
     # Problem 2.3: Use post-order traversal (left, right, root) to generate postfix notation.
     # return an array of elements of a postfix expression
     # expected output for the tree from problem 1 is [3,4,+,2,*]
