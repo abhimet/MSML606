@@ -219,13 +219,13 @@ except ValueError as e: print(e)
 try: s.evaluatePostfix("") 
 except ValueError as e: print(e)
 
-#negative numbers - not sure
+#negative numbers
 print(s.evaluatePostfix("-2 5 *"))
 #large numbers - not sure
-print(s.evaluatePostfix("9999999 332424 +"))
+print(s.evaluatePostfix("9999999 332424 *"))
 #invalid tokens - not sure
 #division by zero already handled in problem 3
-
+print(s.evaluatePostfix("9 0 /"))
 
 # Main Function. Do not edit the code below
 if __name__ == "__main__":
