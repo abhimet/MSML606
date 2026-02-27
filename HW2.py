@@ -133,6 +133,10 @@ print(hw2.infixNotationPrint(empty_tree))
 print(hw2.infixNotationPrint(case_1))
 print(hw2.infixNotationPrint(case_2))
 
+#all are working
+
+
+
 class Stack:
     # Implement your stack using either an array or a list
     # (i.e., implement the functions based on the Stack ADT we covered in class)
