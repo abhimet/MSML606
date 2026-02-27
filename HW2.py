@@ -88,7 +88,10 @@ class HomeWork2:
         left = self.postfixNotationPrint(head.left)
         for vals in left:
             final_result.append(vals)
-        
+        #going right next
+        right = self.postfixNotationPrint(head.right)
+        for vals in right:
+            final_result.append(vals)
 
 hw2 = HomeWork2()
 root = hw2.constructBinaryTree(["3", "4", "+", "2", "*"])   
