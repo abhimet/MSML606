@@ -81,7 +81,8 @@ class HomeWork2:
         left = self.infixNotationPrint(head.left)
         for vals in left:
             final_result.append(vals) 
-
+        #going root next since in order
+        final_result.append(head.val)
 
     # Problem 2.3: Use post-order traversal (left, right, root) to generate postfix notation.
     # return an array of elements of a postfix expression
