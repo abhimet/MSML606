@@ -219,9 +219,9 @@ try: s.evaluatePostfix("")
 except ValueError as e: print(e)
 
 #negative numbers - not sure
-
-
-
+#large numbers - not sure
+#invalid tokens - not sure
+#division by zero already handled in problem 3
 
 
 # Main Function. Do not edit the code below
