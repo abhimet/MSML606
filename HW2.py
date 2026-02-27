@@ -201,7 +201,8 @@ class Stack:
                     stack.push(calculation)
                 elif element == "/":
                     if last_no == 0:
-                        raise ZeroDivisionError("error cant divide by zero") #zerodivisionerror
+                        raise ZeroDivisionError("error cant divide by zero")
+                    #zerodivisionerror
                     calculation = int((second_last_no)/(last_no)) #division
                     stack.push(calculation)
         return stack.pop() #returning whatever is left after all calculations
@@ -216,6 +217,11 @@ except ValueError as e: print(e)
 #empty
 try: s.evaluatePostfix("") 
 except ValueError as e: print(e)
+
+#negative numbers
+
+
+
 
 
 # Main Function. Do not edit the code below
