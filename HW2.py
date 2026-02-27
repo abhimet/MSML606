@@ -206,8 +206,9 @@ class Stack:
 s = Stack()
 print(s.evaluatePostfix("5 1 2 + 4 * + 3 -"))
 #edge cases
-
-
+#malformed
+try: s.evaluatePostfix("1 +")
+except ValueError as e: print(e)
 # Main Function. Do not edit the code below
 if __name__ == "__main__":
     homework2 = HomeWork2()
