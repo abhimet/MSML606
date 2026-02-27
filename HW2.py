@@ -113,18 +113,22 @@ class HomeWork2:
         final_result.append(head.val) #getting to root last since post order
         return final_result #return combined
 hw2 = HomeWork2()
+empty_tree =None
 case_1 = hw2.constructBinaryTree(["3", "4", "+", "2", "*"]) 
 case_2 = hw2.constructBinaryTree(["5"])  
 
 #testing prefix 
+print(hw2.prefixNotationPrint(empty_tree))
 print(hw2.prefixNotationPrint(case_1))
 print(hw2.prefixNotationPrint(case_2))
 
 #testing postfix
+print(hw2.postfixNotationPrint(empty_tree))
 print(hw2.postfixNotationPrint(case_1))
 
 #testing infix
-print(hw2.infixNotationPrintNotation(case_1))
+print(hw2.infixNotationPrintfix(empty_tree))
+print(hw2.infixNotationPrint(case_1))
 
 class Stack:
     # Implement your stack using either an array or a list
