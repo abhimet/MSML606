@@ -83,6 +83,11 @@ class HomeWork2:
     def postfixNotationPrint(self, head: TreeNode) -> list:
         if head is None: #checking if no node again, then return empty list
             return []
+        final_result =[]
+        #going left first for post order
+        left = self.postfixNotationPrint(head.left)
+        for vals in left:
+            final_result.append(vals)
         
 
 hw2 = HomeWork2()
