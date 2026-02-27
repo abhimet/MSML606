@@ -122,7 +122,7 @@ print(hw2.prefixNotationPrint(case_2))
 print(hw2.postfixNotationPrint(case_1))
 
 #testing infix
-
+print(hw2.infixNotationPrintNotation(case_1))
 
 class Stack:
     # Implement your stack using either an array or a list
