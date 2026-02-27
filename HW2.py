@@ -221,7 +221,7 @@ except ValueError as e: print(e)
 
 #negative numbers - not sure
 #large numbers - not sure
-print(s.evaluatePostfix("9999999 3 +"))
+print(s.evaluatePostfix("9999999 332424 +"))
 #invalid tokens - not sure
 #division by zero already handled in problem 3
 
