@@ -54,7 +54,10 @@ class HomeWork2:
         #checking if no node, then giving out nothing:
         if head is None:
             return []
-            
+        final_result = [head.val] #setting up the list with value at current node
+        
+        
+        lef
 
     # Problem 2.2: Use in-order traversal (left, root, right) for infix notation with appropriate parentheses.
     # return an array of elements of an infix expression
