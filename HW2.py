@@ -81,8 +81,9 @@ class HomeWork2:
     # you can see the examples in p2_traversals.csv
 
     def postfixNotationPrint(self, head: TreeNode) -> list:
-        pass
-
+        if head is None: #checking if no node again, then return empty list
+            return []
+        
 
 hw2 = HomeWork2()
 root = hw2.constructBinaryTree(["3", "4", "+", "2", "*"])   
