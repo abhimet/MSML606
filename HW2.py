@@ -54,7 +54,7 @@ class HomeWork2:
         #checking if no node, then giving out nothing:
         if head is None:
             return []
-        final_result = [head.val] #setting up the list with value at current node
+        final_result = [head.val] #setting up the list with value at root
         left = self.prefixNotationPrint(head.left)#going from root to left child immediately
         for vals in left:
             final_result.append(vals) #adding left side to list
@@ -92,7 +92,8 @@ class HomeWork2:
         right = self.postfixNotationPrint(head.right)
         for vals in right:
             final_result.append(vals)
-
+        final_result.append(head.val) #getting to root last since post order
+        return final_result #return combined
 hw2 = HomeWork2()
 root = hw2.constructBinaryTree(["3", "4", "+", "2", "*"])   
 
