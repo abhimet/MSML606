@@ -179,6 +179,8 @@ class Stack:
     def evaluatePostfix(s, exp: str) -> int: 
         # TODO: implement this using your Stack class
         sep_exp = exp.split() #splitting the expresison so each value has its own string
+        if exp == "":
+            raise ValueError("empty")
         stack = Stack() 
         for element in sep_exp: 
             if element not in ['+', '-', '*', '/']: #checking if any element is a number
@@ -211,6 +213,9 @@ print(s.evaluatePostfix("5 1 2 + 4 * + 3 -"))
 try: s.evaluatePostfix("1 +")
 except ValueError as e: print(e)
 
+#empty
+try: s.evaluatePostfix("") 
+except ValueError as e: print(e)
 
 
 # Main Function. Do not edit the code below
