@@ -75,7 +75,7 @@ class HomeWork2:
         #no node, giving out nothing, empty list
         if head is None:
             return [] 
-        final_result = ['('] #adding parentheses as trying to match expected output
+  
          
         
         #getting all left vals
