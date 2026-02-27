@@ -83,7 +83,14 @@ class HomeWork2:
             final_result.append(vals) 
         #going root next since in order
         final_result.append(head.val)
-
+        
+        #getting right values
+        right = self.infixNotationPrint(head.right)
+        for vals in right:
+            final_result.append(vals)
+        
+        return final_result #combined with everything
+    
     # Problem 2.3: Use post-order traversal (left, right, root) to generate postfix notation.
     # return an array of elements of a postfix expression
     # expected output for the tree from problem 1 is [3,4,+,2,*]
