@@ -79,7 +79,7 @@ class HomeWork2:
         #checking if number at given node
         if head.left is None and head.right is None:
             return [head.val] #give number directly
-        
+        final_result = ['('] #starting with parentheses if child exists
         #getting all left vals
         left = self.infixNotationPrint(head.left)
         for vals in left:
