@@ -61,7 +61,7 @@ class HomeWork2:
         right = self.prefixNotationPrint(head.right)
         for vals in right:
             final_result.append(vals) #adding right 
-
+        return final_result #returning list w all combined
     # Problem 2.2: Use in-order traversal (left, root, right) for infix notation with appropriate parentheses.
     # return an array of elements of an infix expression
     # expected output for the tree from problem 1 is [(,(,3,+,4,),*,2,)]
@@ -83,8 +83,12 @@ class HomeWork2:
     def postfixNotationPrint(self, head: TreeNode) -> list:
         pass
 
+
 hw2 = HomeWork2()
-print(hw2.constructBinaryTree(["3", "4", "+", "2", "*"]))      
+root = hw2.constructBinaryTree(["3", "4", "+", "2", "*"])   
+
+#testing prefix 
+print(hw2.prefixNotationPrint(root))
 
 class Stack:
     # Implement your stack using either an array or a list
