@@ -218,7 +218,7 @@ except ValueError as e: print(e)
 try: s.evaluatePostfix("") 
 except ValueError as e: print(e)
 
-#negative numbers
+#negative numbers - not sure
 
 
 
