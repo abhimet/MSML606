@@ -186,6 +186,8 @@ class Stack:
             else:
                 last_no = stack.pop() #last #, on right
                 second_last_no = stack.pop() #second to last #, on left
+                if last_no is None or second_last_no is None:
+                    raise ValueError("malformed") #malformed edge case
                 if element == '+':
                     calculation = second_last_no + last_no #addition
                     stack.push(calculation)
@@ -203,6 +205,7 @@ class Stack:
         return stack.pop() #returning whatever is left after all calculations
 s = Stack()
 print(s.evaluatePostfix("5 1 2 + 4 * + 3 -"))
+#edge cases
 
 
 # Main Function. Do not edit the code below
