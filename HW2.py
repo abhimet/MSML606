@@ -220,7 +220,7 @@ try: s.evaluatePostfix("")
 except ValueError as e: print(e)
 
 #negative numbers
-print(s.evaluatePostfix("-2 5 -"))
+print(s.evaluatePostfix("-2 5 *"))
 #large numbers - not sure
 print(s.evaluatePostfix("9999999 332424 *"))
 #invalid tokens - not sure
