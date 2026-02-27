@@ -92,7 +92,7 @@ class HomeWork2:
         for vals in right:
             final_result.append(vals)
         final_result.append(')') #adding closed parentheses
-        return final_result #combined with everything
+        return final_result #combined with everything 
     
 
     # Problem 2.3: Use post-order traversal (left, right, root) to generate postfix notation.
