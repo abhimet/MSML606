@@ -127,8 +127,9 @@ print(hw2.postfixNotationPrint(empty_tree))
 print(hw2.postfixNotationPrint(case_1))
 
 #testing infix
-print(hw2.infixNotationPrintfix(empty_tree))
+print(hw2.infixNotationPrint(empty_tree))
 print(hw2.infixNotationPrint(case_1))
+print(hw2.infixNotationPrint(case_2))
 
 class Stack:
     # Implement your stack using either an array or a list
